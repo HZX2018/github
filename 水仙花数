@@ -1,0 +1,18 @@
+public static void main(String[] args) {
+
+		int count =0;
+		for (int i = 100; i < 1000; i++) 
+		{
+			int h =i/100;
+			int j = (i/10)%10;
+			int k = i%10;
+		if (i == h*h*h+j*j*j+k*k*k) {
+			
+			System.out.print(i+"|");
+			count ++;
+		}
+		}
+		System.out.println();
+		System.out.println("-----------------------");
+		的System.out.println（ “水仙花数一共有” +计数+ “个”）;
+	}
