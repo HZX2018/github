@@ -1,0 +1,30 @@
+public static void main(String[] args) 
+	{
+//		j表示鸡的个数 t表示兔的个数
+		for (int j = 1; j <= 35; j++) 
+		{
+			if (2*j+4*(35-j)==94) 
+			{
+				for (int t = 1; t <=35; t++)
+				{
+					if (j+t==35)
+					{
+					System.out.println("鸡有"+j+"只");	
+					System.out.println("兔有"+t+"只");	
+					}
+				}
+			}
+		}
+//		方法二：
+		
+		for (int jj = 1; jj <= 35; jj++)
+		{
+			int tt=35-jj;
+			if (2*jj+4*tt==94) 
+			{
+				System.out.println("鸡有"+jj+"只");
+				System.out.println("兔有"+tt+"只");
+			}
+		}
+		
+	}
