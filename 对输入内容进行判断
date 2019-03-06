@@ -1,0 +1,28 @@
+public static void main(String[] args) 
+	{
+		Scanner bao=new Scanner(System.in);
+		System.out.println("请输入红包金额：");
+		int i = bao.nextInt();
+			if (i<0||i>200)
+			{
+				System.out.println("输入金额超出，请重新输入！");
+			}
+			else {
+			if (i>=0&&i<=50) 
+			{
+				System.out.println("您是工薪层");
+			}
+			else if (i>50&&i <=100)
+			{
+				System.out.println("您是白领层");
+			}
+			else if (i>100&&i<=150)
+			{
+				System.out.println("您是金领层");
+			}
+			else
+			{
+				System.out.println("您是土豪层");
+			}
+			}
+	}
