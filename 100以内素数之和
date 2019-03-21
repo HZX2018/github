@@ -1,0 +1,22 @@
+public static void main(String[] args) 
+	{
+		int sum = 0;
+		for (int i = 2; i <=100 ; i++) //1不是素数
+		{
+			int x=0; //作为判断依据
+			
+			for (int j = 2; j < i; j++) //素数只能被1和它本身整除
+			{
+				if (i%j==0) 
+				{
+					x++;
+				}
+			}
+			if (x==0) //即判断i为素数时
+			{
+				sum =sum+i;
+			}
+			
+		}
+		System.out.println("100以内素数之和为："+sum);
+}
